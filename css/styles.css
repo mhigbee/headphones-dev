@@ -1,0 +1,73 @@
+.main-container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.main-top-section {
+    height: 30vh;
+    background: url("http://i.imgur.com/WfPT5fD.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.fa-bars {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.item {
+    width: 50%;
+    float: left;
+}
+
+.item-title {
+    display: none;
+}
+
+.item img {
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    .item {
+        width: 100%;
+        position: relative;
+        background: #FBFBFB;
+    }
+
+    .wide-image {
+        display: block;
+        width: 100%;
+    }
+
+    .item img {
+        width: 50%;
+        float: right;
+    }
+
+    .item-title {
+        display: block;
+        position: absolute;
+        font-size: 1.5rem;
+        top: 200px;
+        left: 40px;
+    }
+
+
+}
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
